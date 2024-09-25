@@ -24,7 +24,6 @@ int main(void){
 
 /*FUNÇÕES/FUNCTION*/
 void tela_principal(void) {
-    char op;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -42,7 +41,6 @@ void tela_principal(void) {
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
-    scanf("%c",op);
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
