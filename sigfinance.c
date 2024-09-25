@@ -40,7 +40,7 @@ void tela_principal(void) {
     printf("///            4. Módulo Relatórios                                         ///\n");
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada:                                    ///\n");
+    printf("///            Escolha a opção desejada: ");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -69,7 +69,7 @@ void menu_moradores(){
     printf("///            4. Excluir um morador                                        ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada:                                    ///\n");                                
+    printf("///            Escolha a opção desejada: ");                                
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -99,7 +99,7 @@ void menu_despesas(void){
     printf("///            4. Excluir uma despesa                                       ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada:                                    ///\n");                                
+    printf("///            Escolha a opção desejada: ");                               
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -130,7 +130,7 @@ void tarefas(void){
     printf("///            4. Excluir uma tarefa                                        ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada:                                    ///\n");                                
+    printf("///            Escolha a opção desejada: ");                                
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
