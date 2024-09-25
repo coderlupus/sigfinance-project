@@ -16,7 +16,7 @@ int main(void){
     tela_principal();
     menu_moradores();
     menu_informacoes();
-    menu_despesas();
+    menu_despesas();   /*BORAA BIRL*/
     tarefas();
     
     return 0;
