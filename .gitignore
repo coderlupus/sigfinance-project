@@ -51,3 +51,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Para ignorar todos arquivos e sub-pastas localizados na pasta metadata/plugins/
+metadata/plugins/nome-do-plugin
+
+# Para ignorar todos os arquivos e sub-pastas da pasta metadata/
+metadata/
