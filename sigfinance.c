@@ -44,6 +44,27 @@ void tela_principal(void) {
     printf("///            Escolha a opção desejada: ");
     scanf("%d",&opcao);
     getchar();
+    switch(opcao) {
+        case 1:
+            menu_moradores(); 
+            break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
+        case 2:
+            menu_despesas(); 
+            break;
+        case 3:
+            tarefas();
+            break;
+        case 4:
+            /*falta add o de relatorios*/
+            break;
+        case 0:
+            printf("Saindo do sistema...\n");
+            break;
+        default: /*Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.*/
+            printf("Opção inválida! Tente novamente.\n");
+            tela_principal();
+            break;
+    }
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
