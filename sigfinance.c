@@ -24,6 +24,7 @@ int main(void){
 
 /*FUNÇÕES/FUNCTION*/
 void tela_principal(void) {
+    int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -41,6 +42,7 @@ void tela_principal(void) {
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
+    scanf("%d",&opcao);
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -50,6 +52,7 @@ void tela_principal(void) {
 }
 
 void menu_moradores(){
+    int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -69,7 +72,8 @@ void menu_moradores(){
     printf("///            4. Excluir um morador                                        ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");                                
+    printf("///            Escolha a opção desejada: ");       
+    scanf("%d",&opcao);                         
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
