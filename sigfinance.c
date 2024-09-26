@@ -43,6 +43,7 @@ void tela_principal(void) {
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
     scanf("%d",&opcao);
+    /*TESTE*/
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
