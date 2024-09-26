@@ -86,6 +86,7 @@ void menu_moradores(){
 }
 
 void menu_despesas(void){
+    int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -105,7 +106,9 @@ void menu_despesas(void){
     printf("///            4. Excluir uma despesa                                       ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");                               
+    printf("///            Escolha a opção desejada: ");
+    scanf("%d",&opcao);
+    getchar();                               
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -117,6 +120,7 @@ void menu_despesas(void){
 
 
 void tarefas(void){
+    int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -136,7 +140,9 @@ void tarefas(void){
     printf("///            4. Excluir uma tarefa                                        ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");                                
+    printf("///            Escolha a opção desejada: ");
+    scanf("%d",&opcao);
+    getchar();                                
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
