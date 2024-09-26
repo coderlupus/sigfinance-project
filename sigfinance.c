@@ -43,7 +43,7 @@ void tela_principal(void) {
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
     scanf("%d",&opcao);
-    /*TESTE*/
+    getchar();
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
@@ -74,7 +74,8 @@ void menu_moradores(){
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");       
-    scanf("%d",&opcao);                         
+    scanf("%d",&opcao);    
+    getchar();                     
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
