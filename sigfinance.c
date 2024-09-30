@@ -11,7 +11,7 @@
     void tarefas(void);
 
 
-/*FUNÇÕES/FUNCTIONS:*/
+/*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void){
     tela_principal();
     menu_moradores();
