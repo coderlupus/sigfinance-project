@@ -129,7 +129,27 @@ void menu_despesas(void){
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
     scanf("%d",&opcao);
-    getchar();                               
+    getchar();       
+    switch (opcao) {
+        case 1:
+            printf("Cadastrar Despesas.\n");
+            break;
+        case 2:
+            printf("Editar Despesas.\n");
+            break;
+        case 3:
+            printf("Excluir Despesas.\n");
+            break;
+        case 4:
+            printf("Listar Despesas.\n");
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default:
+            printf("Opção inválida! Tente novamente.\n");
+            menu_despesas();
+    }                        
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
