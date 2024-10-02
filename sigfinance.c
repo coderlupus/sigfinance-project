@@ -127,9 +127,9 @@ void menu_moradores(){
 
 void cadastrar_morador() {
     /* Declaração de variáveis para armazenar os dados do morador */
-    char nome[50];   /* Array para armazenar o nome do morador (máximo 49 caracteres) */
-    int idade;       /* Variável para armazenar a idade do morador. */
-    char email[50];  /* Array para armazenar o e-mail do morador (máximo 49 caracteres).*/
+    char nome[50];   
+    int idade;       
+    char email[50];  
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
