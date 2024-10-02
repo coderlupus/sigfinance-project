@@ -104,30 +104,33 @@ void menu_moradores(){
 
 
 void cadastrar_morador() {
-    char nome[50];
-    int idade;
-    char email[50];
+    // Declaração de variáveis para armazenar os dados do morador
+    char nome[50];   // Array para armazenar o nome do morador (máximo 49 caracteres + '\0')
+    int idade;       // Variável para armazenar a idade do morador
+    char email[50];  // Array para armazenar o e-mail do morador (máximo 49 caracteres + '\0')
 
+    // Exibe o cabeçalho do cadastro
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
     printf("///                                                                         ///\n");
-    printf("///            Informe os dados do morador:                                 ///\n");
+    printf("/// Informe os dados do morador:                                           ///\n");
     printf("///            Nome: ");
-    fgets(nome, sizeof(nome), stdin);
+    fgets(nome, sizeof(nome), stdin); // Lê uma linha do stdin, incluindo espaços
     printf("///            Idade: ");
-    scanf("%d", &idade);
-    getchar(); // Limpar o buffer do teclado
+    scanf("%d", &idade);   // Lê um número inteiro para a idade
+    getchar();              // Limpa o buffer do teclado para evitar problemas com fgets
     printf("///            E-mail: ");
-    fgets(email, sizeof(email), stdin);
+    fgets(email, sizeof(email), stdin); // Lê uma linha do stdin para o e-mail
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///            Morador cadastrado com sucesso!                              ///\n");
-    printf("///            Nome: %s", nome);
-    printf("///            Idade: %d\n", idade);
-    printf("///            E-mail: %s", email);
+    printf("///            Nome: %s", nome);    
+    printf("///            Idade: %d\n", idade); 
+    printf("///            E-mail: %s", email); 
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
+
 
 
 void menu_despesas(void){
