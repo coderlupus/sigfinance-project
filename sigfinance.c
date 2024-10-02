@@ -104,32 +104,35 @@ void menu_moradores(){
 
 
 void cadastrar_morador() {
-    // Declaração de variáveis para armazenar os dados do morador
-    char nome[50];   // Array para armazenar o nome do morador (máximo 49 caracteres + '\0')
-    int idade;       // Variável para armazenar a idade do morador
-    char email[50];  // Array para armazenar o e-mail do morador (máximo 49 caracteres + '\0')
+    char nome[50];
+    int idade;
+    char email[50];
+    int numero_morador;
 
-    // Exibe o cabeçalho do cadastro
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
     printf("///                                                                         ///\n");
     printf("/// Informe os dados do morador:                                           ///\n");
+    printf("///            Número do Morador: ");
+    scanf("%[^\n]", &numero_morador);
     printf("///            Nome: ");
-    fgets(nome, sizeof(nome), stdin); // Lê uma linha do stdin, incluindo espaços
+    scanf("%[^\n]", nome);
     printf("///            Idade: ");
-    scanf("%d", &idade);   // Lê um número inteiro para a idade
-    getchar();              // Limpa o buffer do teclado para evitar problemas com fgets
+    scanf("%[^\n]", &idade);
+    getchar(); 
     printf("///            E-mail: ");
-    fgets(email, sizeof(email), stdin); // Lê uma linha do stdin para o e-mail
+    scanf("%[^\n]", email); 
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///            Morador cadastrado com sucesso!                              ///\n");
-    printf("///            Nome: %s", nome);    
-    printf("///            Idade: %d\n", idade); 
-    printf("///            E-mail: %s", email); 
+    printf("///            Número do Morador: %d\n", numero_morador);
+    printf("///            Nome: %s\n", nome);
+    printf("///            Idade: %d\n", idade);
+    printf("///            E-mail: %s\n", email);
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
+
 
 
 
