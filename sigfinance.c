@@ -20,8 +20,8 @@ int main(void){
 
 /*FUNÇÕES/FUNCTION*/
 void tela_principal(void) {
-    system(“clear||cls”);
     int opcao;
+    system("clear||cls");
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
@@ -71,7 +71,7 @@ void tela_principal(void) {
 }
 
 void menu_moradores(){
-    system(“clear||cls”);
+    system("clear||cls");
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -154,7 +154,7 @@ void cadastrar_morador() {
 
 
 void menu_despesas(void){
-    system(“clear||cls”);
+    system("clear||cls");
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -209,7 +209,7 @@ void menu_despesas(void){
 
 
 void tarefas(void){
-    system(“clear||cls”);
+    system("clear||cls");
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
