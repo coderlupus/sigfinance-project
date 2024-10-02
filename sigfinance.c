@@ -20,6 +20,7 @@ int main(void){
 
 /*FUNÇÕES/FUNCTION*/
 void tela_principal(void) {
+    system(“clear||cls”);
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -70,6 +71,7 @@ void tela_principal(void) {
 }
 
 void menu_moradores(){
+    system(“clear||cls”);
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -143,15 +145,16 @@ void cadastrar_morador() {
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///            Morador cadastrado com sucesso!                              ///\n");
-    printf("///            Nome: %s", nome);    // Exibe o nome cadastrado
-    printf("///            Idade: %d\n", idade); // Exibe a idade cadastrada
-    printf("///            E-mail: %s", email); // Exibe o e-mail cadastrado
+    printf("///            Nome: %s", nome);  
+    printf("///            Idade: %d\n", idade); 
+    printf("///            E-mail: %s", email); 
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
 
 void menu_despesas(void){
+    system(“clear||cls”);
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -206,6 +209,7 @@ void menu_despesas(void){
 
 
 void tarefas(void){
+    system(“clear||cls”);
     int opcao;
     printf("\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -257,5 +261,7 @@ void menu_informacoes(void){
     printf("///   - - - tomearcanjo12@gmail.com    e     nlopesr2006@gmail.com - - -    ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+
+
 
 }
