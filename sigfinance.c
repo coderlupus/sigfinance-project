@@ -14,11 +14,6 @@
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void){
     tela_principal();
-    menu_moradores();
-    menu_informacoes();
-    menu_despesas();
-    tarefas();
-    
     return 0;
 }
 
