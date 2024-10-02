@@ -92,7 +92,28 @@ void menu_moradores(){
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");       
     scanf("%d",&opcao);    
-    getchar();                     
+    getchar();             
+    switch(opcao) {
+        case 1:
+            cadastrar_morador(); 
+            break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
+        case 2:
+            /*em construção*/ 
+            break;
+        case 3:
+            /*em construção*/ 
+            break;
+        case 4:
+            /*em construção*/ 
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default: /*Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.*/
+            printf("Opção inválida! Tente novamente.\n");
+            tela_principal();
+            break;
+    }
     printf("///                                                                         ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
