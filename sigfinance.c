@@ -9,6 +9,7 @@
     void menu_moradores(void);
     void menu_despesas(void);
     void tarefas(void);
+    void cadastrar_morador(void);
 
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
@@ -100,6 +101,34 @@ void menu_moradores(){
 
 
 }
+
+
+void cadastrar_morador() {
+    char nome[50];
+    int idade;
+    char email[50];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
+    printf("///                                                                         ///\n");
+    printf("///            Informe os dados do morador:                                 ///\n");
+    printf("///            Nome: ");
+    fgets(nome, sizeof(nome), stdin);
+    printf("///            Idade: ");
+    scanf("%d", &idade);
+    getchar(); // Limpar o buffer do teclado
+    printf("///            E-mail: ");
+    fgets(email, sizeof(email), stdin);
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///            Morador cadastrado com sucesso!                              ///\n");
+    printf("///            Nome: %s", nome);
+    printf("///            Idade: %d\n", idade);
+    printf("///            E-mail: %s", email);
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+}
+
 
 void menu_despesas(void){
     int opcao;
