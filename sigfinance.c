@@ -255,13 +255,17 @@ void menu_informacoes(void){
     printf("///a fácil administração das responsabilidades de cada morador da república.///\n");
     printf("///                  - - - Equipe de desenvolvimento - - -                  ///\n");
     printf("///   - - - Tomé Galileu Oliveira Arcanjo e Nathan Lopes Rodrigues - - -    ///\n");
-    printf("///                  - - -       Redes sociais       - - -                  ///\n");
+    printf("///                  - - -         Instagram       - - -                    ///\n");
     printf("///   - - - @Tome.arcanjo              e          @nlpsr_          - - -    ///\n");
+    printf("///                  - - -           Github       - - -                     ///\n");
     printf("///   - - - @tome-arcanjo              e          @coderlupus      - - -    ///\n");
+    printf("///                  - - -           E-mail       - - -                     ///\n");
     printf("///   - - - tomearcanjo12@gmail.com    e     nlopesr2006@gmail.com - - -    ///\n");
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
-
-
-
+    
+    printf("\n\t\t\t>>> Tecle <ENTER> para voltar ao menu principal...\n");
+    getchar();  // Espera o usuário apertar "Enter"
+    tela_principal();  // Volta ao menu principal
 }
+
