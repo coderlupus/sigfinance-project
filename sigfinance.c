@@ -214,6 +214,32 @@ void menu_despesas(void){
 }
 
 
+void cadastrar_despesa() {
+    char descricao[200];
+    char valor[10];
+    char data[12];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Cadastrar Nova Despesa = = = = = = = = = = = = = = ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe os dados da despesa:                                            ///\n");
+    printf("///            Descrição: ");
+    fgets(descricao, sizeof(descricao), stdin);
+    printf("///            Valor: ");
+    fgets(valor, sizeof(valor), stdin);
+    printf("///            Data (dd/mm/aaaa): ");
+    fgets(data, sizeof(data), stdin);
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///            Despesa cadastrada com sucesso!                              ///\n");
+    printf("///            Descrição: %s", descricao);  
+    printf("///            Valor: %s\n", valor); 
+    printf("///            Data: %s", data); 
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+}
+
+
 void tarefas(void){
     system("clear||cls");
     int opcao;
