@@ -108,10 +108,10 @@ void menu_moradores(){
             pesquisar_morador();
             break;
         case 3:
-            /*em construção*/ 
+            atualizar_morador(); 
             break;
         case 4:
-            /*em construção*/ 
+            excluir_morador(); 
             break;
         case 0:
             tela_principal();
