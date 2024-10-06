@@ -10,9 +10,10 @@
     void menu_despesas(void);
     void tarefas(void);
     void cadastrar_morador(void);
+    void pesquisar_morador(void);
     void cadastrar_tarefa(void);
     void cadastrar_despesa(void);
-    void pesquisar_morador(void);
+
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void){
@@ -132,7 +133,8 @@ void cadastrar_morador() {
     char nome[50];   
     char idade[5];       
     char email[50];
-    char telefone[17];  
+    char tel[17];
+    char cpf[13];  
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
@@ -145,19 +147,30 @@ void cadastrar_morador() {
     getchar();              /* Limpa o buffer do teclado para evitar problemas com fgets */
     printf("///            E-mail:  ");
     fgets(email, sizeof(email), stdin); /* Lê uma linha do stdin para o e-mail */
-    printf("///            Telefone;");
-    fgets(telefone, sizeof(telefone), stdin);
+    printf("///            Telefone:");
+    fgets(tel, sizeof(tel), stdin);
+    printf("///            CPF:     ");
+    fgets(cpf, sizeof(cpf), stdin);
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///            Morador cadastrado com sucesso!                              ///\n");
     printf("///            Nome: %s", nome);  
     printf("///            Idade: %s\n", idade); 
-    printf("///            E-mail: %s", email); 
+    printf("///            E-mail: %s", email);
+    printf("///            Tel:    %s", tel);
+    printf("///            CPF:    %s", cpf); 
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
 void pesquisar_morador(){
+    char cpf[13];
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");/* terminar funçao após resgate de arquivos*/
+    printf("///            = = = = = Pesquisar Morador 		= = = = = = = = = = = = =   ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador:                                               ///\n");
+    fgets(cpf, sizeof(cpf), stdin);
+    getchar();    
 	
 }
 
