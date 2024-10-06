@@ -14,6 +14,7 @@
     void cadastrar_tarefa(void);
     void cadastrar_despesa(void);
     void atualizar_morador(void);
+    void excluir_morador(void);
 
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
@@ -188,6 +189,16 @@ void atualizar_morador(){
     printf("/// Informe o CPF do morador:                                               ///\n");
     fgets(cpf, sizeof(cpf), stdin);
     /* adicionar funçao de troca de dados*/
+}
+
+void excluir_morador(){
+    char cpf[13];
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");/* terminar funçao após resgate de arquivos*/
+    printf("///            = = = = = Excluir morador  = = = = = = = = = = = = =           ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador:                                               ///\n");
+    fgets(cpf, sizeof(cpf), stdin);
+     /* adicionar exclusao após salvamento de arquivos simples*/
 }
 
 void menu_despesas(void){
