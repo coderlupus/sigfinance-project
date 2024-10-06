@@ -130,7 +130,7 @@ void cadastrar_morador() {
     char nome[50];   
     char idade[5];       
     char email[50];
-	char telefone[17];  
+    char telefone[17];  
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
