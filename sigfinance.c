@@ -100,7 +100,7 @@ void menu_moradores(){
             cadastrar_morador();
             break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
         case 2:
-            
+            pesquisar_morador();
             break;
         case 3:
             /*em construção*/ 
