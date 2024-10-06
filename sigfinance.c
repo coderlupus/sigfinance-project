@@ -97,16 +97,16 @@ void menu_moradores(){
     getchar();             
     switch(opcao) {
         case 1:
-            cadastrar_morador(); 
+            printf("Cadastrar um novo morador");
             break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
         case 2:
-            /*em construção*/ 
+            printf("Pesquisar moradores");
             break;
         case 3:
-            /*em construção*/ 
+            printf("Atualizar moradores");
             break;
         case 4:
-            /*em construção*/ 
+            printf("Excluir morador");
             break;
         case 0:
             tela_principal();
@@ -169,9 +169,9 @@ void menu_despesas(void){
     printf("///                                                                         ///\n");
     printf("///            = = = = = = = = = Menu Despesas = = = = = = = = =            ///\n");
     printf("///                                                                         ///\n");
-    printf("///            1. Cadastrar uma despesa                                     ///\n");
+    printf("///            1. Cadastrar uma despesas                                    ///\n");
     printf("///            2. Pesquisar as despesas                                     ///\n");
-    printf("///            3. Atualizar despesas                                        ///\n");
+    printf("///            3. Atualizar uma despesas                                    ///\n");
     printf("///            4. Excluir uma despesa                                       ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
@@ -238,6 +238,25 @@ void tarefas(void){
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+     switch (opcao) {
+        case 1:
+            printf("Cadastrar Tarefas.\n");
+            break;
+        case 2:
+            printf("Pesquisar Tarefas.\n");
+            break;
+        case 3:
+            printf("Atualizar Tarefas.\n");
+            break;
+        case 4:
+            printf("Excluir Tarefas.\n");
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default:
+            printf("Opção inválida! Tente novamente.\n");
+            tarefas();
 
 
 }
