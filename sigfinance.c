@@ -13,6 +13,7 @@
     void pesquisar_morador(void);
     void cadastrar_tarefa(void);
     void cadastrar_despesa(void);
+    void atualizar_morador(void);
 
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
@@ -172,6 +173,21 @@ void pesquisar_morador(){
     fgets(cpf, sizeof(cpf), stdin);
     getchar();    
 	
+}
+
+void atualizar_morador(){
+    char cpf[13];
+    char nome[50];
+    char email[50];
+    char tel[17];
+    char idade[5];
+	
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");/* terminar funçao após resgate de arquivos*/
+    printf("///            = = = = = Atualizar morador		= = = = = = = = = = = = = ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador:                                               ///\n");
+    fgets(cpf, sizeof(cpf), stdin);
+    /* adicionar funçao de troca de dados*/
 }
 
 void menu_despesas(void){
