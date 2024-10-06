@@ -86,7 +86,7 @@ void menu_moradores(){
     printf("///                                                                         ///\n");
     printf("///            = = = = = = = = = Menu Morador = = = = = = = = =             ///\n");
     printf("///                                                                         ///\n");
-    printf("///            1. Cadastrar um novo morador                                  ///\n");
+    printf("///            1. Cadastrar um novo morador                                 ///\n");
     printf("///            2. Pesquisar os moradores                                    ///\n");
     printf("///            3. Atualizar o cadastro de um morador                        ///\n");
     printf("///            4. Excluir um morador                                        ///\n");
@@ -97,10 +97,10 @@ void menu_moradores(){
     getchar();             
     switch(opcao) {
         case 1:
-            cadastrar_morador(); 
+            cadastrar_morador();
             break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
         case 2:
-            /*em construção*/ 
+            
             break;
         case 3:
             /*em construção*/ 
@@ -128,30 +128,36 @@ void menu_moradores(){
 void cadastrar_morador() {
     /* Declaração de variáveis para armazenar os dados do morador */
     char nome[50];   
-    int idade;       
-    char email[50];  
+    char idade[5];       
+    char email[50];
+	char telefone[17];  
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Novo Morador = = = = = = = = = = = = =   ///\n");
     printf("///                                                                         ///\n");
-    printf("/// Informe os dados do morador:                                           ///\n");
+    printf("/// Informe os dados do morador:                                            ///\n");
     printf("///            Nome: ");
     fgets(nome, sizeof(nome), stdin); /* Lê uma linha do stdin, incluindo espaços */
     printf("///            Idade: ");
-    scanf("%d", &idade);   /* Lê um número inteiro para a idade */
+    fgets(idade, sizeof(nome), stdin);
     getchar();              /* Limpa o buffer do teclado para evitar problemas com fgets */
-    printf("///            E-mail: ");
+    printf("///            E-mail:  ");
     fgets(email, sizeof(email), stdin); /* Lê uma linha do stdin para o e-mail */
+    printf("///            Telefone;");
+    fgets(telefone, sizeof(telefone), stdin);
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                         ///\n");
     printf("///            Morador cadastrado com sucesso!                              ///\n");
     printf("///            Nome: %s", nome);  
-    printf("///            Idade: %d\n", idade); 
+    printf("///            Idade: %s\n", idade); 
     printf("///            E-mail: %s", email); 
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
+void pesquisar_morador(){
+	
+}
 
 void menu_despesas(void){
     system("clear||cls");
@@ -268,4 +274,3 @@ void menu_informacoes(void){
     getchar();  // Espera o usuário apertar "Enter"
     tela_principal();  // Volta ao menu principal
 }
-
