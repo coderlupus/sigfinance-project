@@ -169,9 +169,9 @@ void menu_despesas(void){
     printf("///                                                                         ///\n");
     printf("///            = = = = = = = = = Menu Despesas = = = = = = = = =            ///\n");
     printf("///                                                                         ///\n");
-    printf("///            1. Cadastrar uma despesas                                    ///\n");
+    printf("///            1. Cadastrar uma despesa                                     ///\n");
     printf("///            2. Pesquisar as despesas                                     ///\n");
-    printf("///            3. Atualizar uma despesas                                    ///\n");
+    printf("///            3. Atualizar despesas                                        ///\n");
     printf("///            4. Excluir uma despesa                                       ///\n");
     printf("///            0. Voltar ao menu anterior                                   ///\n");
     printf("///                                                                         ///\n");
@@ -183,13 +183,13 @@ void menu_despesas(void){
             printf("Cadastrar Despesas.\n");
             break;
         case 2:
-            printf("Editar Despesas.\n");
+            printf("Pesquisar Despesas.\n");
             break;
         case 3:
-            printf("Excluir Despesas.\n");
+            printf("Atualizar Despesas.\n");
             break;
         case 4:
-            printf("Listar Despesas.\n");
+            printf("Excluir Despesas.\n");
             break;
         case 0:
             tela_principal();
