@@ -340,4 +340,8 @@ void menu_informacoes(void){
     printf("\n\t\t\t>>> Tecle <ENTER> para voltar ao menu principal...\n");
     getchar();  // Espera o usuário apertar "Enter"
     tela_principal();  // Volta ao menu principal
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bf78941a131e05372a2acb0847f9263677cd00ad
