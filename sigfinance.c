@@ -10,7 +10,8 @@
     void menu_despesas(void);
     void tarefas(void);
     void cadastrar_morador(void);
-
+    void cadastrar_tarefa(void);
+    void cadastrar_despesa(void);
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void){
@@ -273,6 +274,32 @@ void tarefas(void){
 
 
 }
+
+void cadastrar_tarefa() {
+    char descricao[100];
+    char data_inicio[12];
+    char data_fim[12];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Cadastrar Nova Tarefa = = = = = = = = = = = = = = =///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe os dados da tarefa:                                             ///\n");
+    printf("///            Descrição: ");
+    fgets(descricao, sizeof(descricao), stdin);
+    printf("///            Data de início (dd/mm/aaaa): ");
+    fgets(data_inicio, sizeof(data_inicio), stdin);
+    printf("///            Data de término (dd/mm/aaaa): ");
+    fgets(data_fim, sizeof(data_fim), stdin);
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                         ///\n");
+    printf("///            Tarefa cadastrada com sucesso!                               ///\n");
+    printf("///            Descrição: %s", descricao);  
+    printf("///            Data de início: %s", data_inicio); 
+    printf("///            Data de término: %s", data_fim); 
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+}
+
 
 
 void menu_informacoes(void){
