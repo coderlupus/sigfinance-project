@@ -12,6 +12,7 @@
     void cadastrar_morador(void);
     void cadastrar_tarefa(void);
     void cadastrar_despesa(void);
+    void pesquisar_morador(void);
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void){
