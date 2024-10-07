@@ -61,7 +61,7 @@ void tela_principal(void)
         menu_despesas();
         break;
     case 3:
-        menu_tarefas();
+        menu_tarefas(); 
         break;
     case 4:
         menu_informacoes(); // Função de relatórios ainda precisa ser implementada
