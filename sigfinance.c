@@ -15,6 +15,9 @@
     void excluir_morador(void);
     void cadastrar_despesa(void);
     void cadastrar_tarefa(void);
+    void pesquisar_despesa(void);
+    void atualizar_despesa(void);
+    void excluir_despesa(void);
 
 
 
