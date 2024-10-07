@@ -280,6 +280,41 @@ void cadastrar_despesa() {
     printf("///                                                                         ///\n");
     printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
+void pesquisar_despesa() {
+    char id[5];
+	
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Pesquisar Despesa      = = = = = = = = = = = = = = ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o id da despesa:                                                ///\n");
+    fgets(id, sizeof(id), stdin);
+  
+	
+}
+
+void atualizar_despesa() {
+    char id[5];
+    char descricao[200];
+    char valor[10];
+    char data[12];
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Atualizar Despesa      = = = = = = = = = = = = = = ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o id da despesa:                                                ///\n");
+    fgets(id, sizeof(id), stdin);
+	
+}
+
+void excluir_despesa() {
+    char id[5];
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Excluir Despesa        = = = = = = = = = = = = = = ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o id da despesa:                                                ///\n");
+    fgets(id, sizeof(id), stdin);
+	/* add funcao de excluir apos salvamento de arquivos*/
+}
+
 
 
 void tarefas(void){
