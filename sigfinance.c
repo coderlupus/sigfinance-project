@@ -5,16 +5,17 @@
 
 /*ASSINATURA DAS FUNÇÕES/FUNCTION'S SIGNATURE*/
     void tela_principal(void); /* void: Significa que a função não retorna nenhum valor e (void): Indica que a função não recebe nenhum parâmetro.*/
-    void menu_informacoes(void);
     void menu_moradores(void);
     void menu_despesas(void);
-    void tarefas(void);
+    void menu_tarefas(void);
+    void menu_informacoes(void);
     void cadastrar_morador(void);
     void pesquisar_morador(void);
-    void cadastrar_tarefa(void);
-    void cadastrar_despesa(void);
     void atualizar_morador(void);
     void excluir_morador(void);
+    void cadastrar_despesa(void);
+    void cadastrar_tarefa(void);
+
 
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
@@ -317,7 +318,7 @@ void excluir_despesa() {
 
 
 
-void tarefas(void){
+void menu_tarefas(void){
     system("clear||cls");
     int opcao;
     printf("\n");
