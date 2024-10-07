@@ -14,11 +14,14 @@
     void atualizar_morador(void);
     void excluir_morador(void);
     void cadastrar_despesa(void);
-    void cadastrar_tarefa(void);
     void pesquisar_despesa(void);
     void atualizar_despesa(void);
     void excluir_despesa(void);
-
+    void cadastrar_tarefa(void);
+    void pesquisar_tarefa(void);
+    void atualizar_tarefa(void);
+    void excluir_tarefa(void);
+    
 
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
@@ -357,29 +360,56 @@ void menu_tarefas(void){
 
 void cadastrar_tarefa() {
     char descricao[100];
-    char data_inicio[12];
-    char data_fim[12];
+    char prazo[20];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Cadastrar Nova Tarefa = = = = = = = = = = = = = = =///\n");
+    printf("///            = = = = = Cadastrar Tarefa = = = = = = = = = = = = = = = =    ///\n");
     printf("///                                                                         ///\n");
-    printf("/// Informe os dados da tarefa:                                             ///\n");
-    printf("///            Descrição: ");
+    printf("/// Descrição da tarefa:                                                    ///\n");
     fgets(descricao, sizeof(descricao), stdin);
-    printf("///            Data de início (dd/mm/aaaa): ");
-    fgets(data_inicio, sizeof(data_inicio), stdin);
-    printf("///            Data de término (dd/mm/aaaa): ");
-    fgets(data_fim, sizeof(data_fim), stdin);
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                                                                         ///\n");
-    printf("///            Tarefa cadastrada com sucesso!                               ///\n");
-    printf("///            Descrição: %s", descricao);  
-    printf("///            Data de início: %s", data_inicio); 
-    printf("///            Data de término: %s", data_fim); 
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("/// Prazo da tarefa (dd/mm/aaaa):                                           ///\n");
+    fgets(prazo, sizeof(prazo), stdin);
+    /* adicionar função de cadastro após salvamento de arquivos */
 }
 
+void pesquisar_tarefa() {
+    char descricao[100];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Pesquisar Tarefa = = = = = = = = = = = = = = = =    ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe a descrição da tarefa:                                          ///\n");
+    fgets(descricao, sizeof(descricao), stdin);
+    /* adicionar função de pesquisa após resgate de arquivos */
+}
+
+void atualizar_tarefa() {
+    char descricao[100];
+    char nova_descricao[100];
+    char novo_prazo[20];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Atualizar Tarefa = = = = = = = = = = = = = = = =    ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe a descrição da tarefa que deseja atualizar:                     ///\n");
+    fgets(descricao, sizeof(descricao), stdin);
+    printf("/// Nova descrição:                                                         ///\n");
+    fgets(nova_descricao, sizeof(nova_descricao), stdin);
+    printf("/// Novo prazo (dd/mm/aaaa):                                                ///\n");
+    fgets(novo_prazo, sizeof(novo_prazo), stdin);
+    /* adicionar função de atualização após troca de dados */
+}
+
+void excluir_tarefa() {
+    char descricao[100];
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Excluir Tarefa = = = = = = = = = = = = = = = =      ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe a descrição da tarefa que deseja excluir:                       ///\n");
+    fgets(descricao, sizeof(descricao), stdin);
+    /* adicionar exclusão após salvamento de arquivos */
+}
 
 
 void menu_informacoes(void){
