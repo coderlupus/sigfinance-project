@@ -8,14 +8,17 @@ void menu_moradores(void);
 void menu_despesas(void);
 void menu_tarefas(void);
 void menu_informacoes(void);
+
 void cadastrar_morador(void);
 void pesquisar_morador(void);
 void atualizar_morador(void);
 void excluir_morador(void);
+
 void cadastrar_despesa(void);
 void pesquisar_despesa(void);
 void atualizar_despesa(void);
 void excluir_despesa(void);
+
 void cadastrar_tarefa(void);
 void pesquisar_tarefa(void);
 void atualizar_tarefa(void);
@@ -47,6 +50,7 @@ void tela_principal(void)
     printf("///            2. Módulo Despesas                                           ///\n");
     printf("///            3. Módulo Tarefas diárias                                    ///\n");
     printf("///            4. Módulo Relatórios                                         ///\n");
+    printf("///            5. Módulo Informações                                        ///\n");
     printf("///            0. Sair                                                      ///\n");
     printf("///                                                                         ///\n");
     printf("///            Escolha a opção desejada: ");
@@ -65,6 +69,9 @@ void tela_principal(void)
         break;
     case 4:
         menu_informacoes(); // Função de relatórios ainda precisa ser implementada
+        break;
+    case 5:
+        menu_informacoes();
         break;
     case 0:
         printf("Saindo do sistema...\n");
