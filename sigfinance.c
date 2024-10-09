@@ -7,6 +7,7 @@ void tela_principal(void); /* void: Significa que a função não retorna nenhum
 void menu_moradores(void);
 void menu_despesas(void);
 void menu_tarefas(void);
+void menu_relatorios(void);
 void menu_informacoes(void);
 
 void cadastrar_morador(void);
@@ -68,7 +69,7 @@ void tela_principal(void)
         menu_tarefas(); 
         break;
     case 4:
-        menu_informacoes(); // Função de relatórios ainda precisa ser implementada
+        menu_relatorios(); 
         break;
     case 5:
         menu_informacoes();
@@ -404,6 +405,14 @@ void excluir_tarefa()
     printf("/// Informe a descrição da tarefa que deseja excluir:                       ///\n");
     fgets(descricao, sizeof(descricao), stdin);
     /* adicionar exclusão após salvamento de arquivos */
+}
+
+void menu_relatorios(void){
+
+
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                     = = = = = em construção = = = = =                     ///\n");
+
 }
 
 void menu_informacoes(void)
