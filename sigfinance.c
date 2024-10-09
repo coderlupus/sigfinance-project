@@ -25,6 +25,10 @@ void pesquisar_tarefa(void);
 void atualizar_tarefa(void);
 void excluir_tarefa(void);
 
+void relatorios_morador(void);
+void relatorios_despesa(void);
+void relatorios_tarefa(void);
+
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void)
 {
@@ -408,12 +412,40 @@ void excluir_tarefa()
 }
 
 void menu_relatorios(void){
+    system("clear||cls");
+    int opcao;
+    printf("\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = = = = = Menu Relatórios = = = = = = = = =          ///\n");
+    printf("///                                                                         ///\n");
+    printf("///            1. Relatórios de moradores                                   ///\n");
+    printf("///            2. Relatórios de despesas                                    ///\n");
+    printf("///            3. Relatórios de tarefas                                     ///\n");
+    printf("///            0. Retornar ao menu principal                                ///\n");
+    printf("///                                                                         ///\n");
+    printf("///            Escolha a opção desejada: ");
+    scanf("%d", &opcao);
+    getchar();
+}
 
+void relatorios_morador(void){
 
-    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                     = = = = = em construção = = = = =                     ///\n");
+    //contruindo
 
 }
+
+void relatorios_despesa(void){
+
+    //contruindo
+
+}
+
+void relatorios_tarefas(void){
+
+    //contruindo
+
+}
+
 
 void menu_informacoes(void)
 {
