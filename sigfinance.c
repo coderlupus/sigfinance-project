@@ -4,6 +4,7 @@
 
 /*ASSINATURA DAS FUNÇÕES/FUNCTION'S SIGNATURE*/
 void tela_principal(void); /* void: Significa que a função não retorna nenhum valor e (void): Indica que a função não recebe nenhum parâmetro.*/
+
 void menu_moradores(void);
 void menu_despesas(void);
 void menu_tarefas(void);
@@ -428,22 +429,28 @@ void menu_relatorios(void){
     getchar();
 }
 
-void relatorios_morador(void){
-
-    //contruindo
-
+void relatorios_morador(void)
+{
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Relatório de Moradores = = = = = = = = = = = = =   ///\n");
+    // Implementar a geração do relatório
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
-void relatorios_despesa(void){
-
-    //contruindo
-
+void relatorios_despesa(void)
+{
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Relatório de Despesas = = = = = = = = = = = = =    ///\n");
+    // Implementar a geração do relatório
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
-void relatorios_tarefas(void){
-
-    //contruindo
-
+void relatorios_tarefa(void)
+{
+    printf("\n///////////////////////////////////////////////////////////////////////////////\n");
+    printf("///            = = = = = Relatório de Tarefas = = = = = = = = = = = = =     ///\n");
+    // Implementar a geração do relatório
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
 }
 
 
