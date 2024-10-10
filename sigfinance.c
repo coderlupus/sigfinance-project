@@ -427,6 +427,28 @@ void menu_relatorios(void){
     printf("///            Escolha a opção desejada: ");
     scanf("%d", &opcao);
     getchar();
+    switch (opcao)
+    {
+    case 1:
+        relatorios_morador();
+        break;
+    case 2:
+        relatorios_despesa();
+        break;
+    case 3:
+        relatorios_tarefa();
+        break;
+    case 0:
+        tela_principal();
+        break;
+    default:
+        printf("Opção inválida! Tente novamente.\n");
+        menu_relatorios();
+        break;
+    }
+    printf("///                                                                         ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
 }
 
 void relatorios_morador(void)
