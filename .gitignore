@@ -57,3 +57,6 @@ metadata/plugins/nome-do-plugin
 
 # Para ignorar todos os arquivos e sub-pastas da pasta metadata/
 metadata/
+
+#Outras linguagens
+.py
