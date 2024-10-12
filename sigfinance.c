@@ -373,12 +373,13 @@ void cadastrar_tarefa()
 void pesquisar_tarefa()
 {
     char descricao[100];
+    char id [5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Pesquisar Tarefa = = = = = = = = = = = = = = = =    ///\n");
-    printf("///                                                                         ///\n");
-    printf("/// Informe a descrição da tarefa:                                          ///\n");
-    fgets(descricao, sizeof(descricao), stdin);
+    printf("///            = = = = = Pesquisar Tarefa = = = = = = = = = = = = = = = =     ///\n");
+    printf("///                                                                           ///\n");
+    printf("/// Informe o ID da tarefa:                                                   ///\n");
+    fgets(id, sizeof(id), stdin);
     /* adicionar função de pesquisa após resgate de arquivos */
 }
 
@@ -387,15 +388,16 @@ void atualizar_tarefa()
     char descricao[100];
     char nova_descricao[100];
     char novo_prazo[20];
+    char id [5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Atualizar Tarefa = = = = = = = = = = = = = = = =    ///\n");
-    printf("///                                                                         ///\n");
-    printf("/// Informe a descrição da tarefa que deseja atualizar:                     ///\n");
-    fgets(descricao, sizeof(descricao), stdin);
-    printf("/// Nova descrição:                                                         ///\n");
+    printf("///            = = = = = Atualizar Tarefa = = = = = = = = = = = = = = = =     ///\n");
+    printf("///                                                                           ///\n");
+    printf("/// Informe o ID da tarefa que deseja atualizar:                              ///\n");
+    fgets(id, sizeof(id), stdin);
+    printf("/// Nova descrição:                                                           ///\n");
     fgets(nova_descricao, sizeof(nova_descricao), stdin);
-    printf("/// Novo prazo (dd/mm/aaaa):                                                ///\n");
+    printf("/// Novo prazo (dd/mm/aaaa):                                                  ///\n");
     fgets(novo_prazo, sizeof(novo_prazo), stdin);
     /* adicionar função de atualização após troca de dados */
 }
@@ -403,12 +405,13 @@ void atualizar_tarefa()
 void excluir_tarefa()
 {
     char descricao[100];
+    char id [5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Excluir Tarefa = = = = = = = = = = = = = = = =      ///\n");
-    printf("///                                                                         ///\n");
-    printf("/// Informe a descrição da tarefa que deseja excluir:                       ///\n");
-    fgets(descricao, sizeof(descricao), stdin);
+    printf("///            = = = = = Excluir Tarefa = = = = = = = = = = = = = = = =       ///\n");
+    printf("///                                                                           ///\n");
+    printf("/// Informe o ID da tarefa que deseja excluir:                                ///\n");
+    fgets(id, sizeof(id), stdin);
     /* adicionar exclusão após salvamento de arquivos */
 }
 
