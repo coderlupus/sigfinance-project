@@ -94,55 +94,56 @@ void tela_principal(void){
 }
 
 
-void menu_moradores()
-{
-    system("clear||cls");
+void menu_moradores(){
     int opcao;
-    printf("\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                                                                         ///\n");
-    printf("///            ===================================================          ///\n");
-    printf("///            = = = =              SigFinance             = = = =          ///\n");
-    printf("///            ===================================================          ///\n");
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///                                                                         ///\n");
-    printf("///            = = = = = = = = = Menu Morador = = = = = = = = =             ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            1. Cadastrar um novo morador                                 ///\n");
-    printf("///            2. Pesquisar os moradores                                    ///\n");
-    printf("///            3. Atualizar o cadastro de um morador                        ///\n");
-    printf("///            4. Excluir um morador                                        ///\n");
-    printf("///            0. Voltar ao menu anterior                                   ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");
-    scanf("%d", &opcao);
-    getchar();
-    switch (opcao)
-    {
-    case 1:
-        cadastrar_morador();
-        break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
-    case 2:
-        pesquisar_morador();
-        break;
-    case 3:
-        atualizar_morador();
-        break;
-    case 4:
-        excluir_morador();
-        break;
-    case 0:
-        tela_principal();
-        break;
-    default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
-        printf("Opção inválida! Tente novamente.\n");
-        menu_moradores();
-        break;
-    }
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    do{
+        system("clear||cls");
+        printf("\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("///                                                                         ///\n");
+        printf("///            ===================================================          ///\n");
+        printf("///            = = = =              SigFinance             = = = =          ///\n");
+        printf("///            ===================================================          ///\n");
+        printf("///                                                                         ///\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("///                                                                         ///\n");
+        printf("///            = = = = = = = = = Menu Morador = = = = = = = = =             ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            1. Cadastrar um novo morador                                 ///\n");
+        printf("///            2. Pesquisar os moradores                                    ///\n");
+        printf("///            3. Atualizar o cadastro de um morador                        ///\n");
+        printf("///            4. Excluir um morador                                        ///\n");
+        printf("///            0. Voltar ao menu anterior                                   ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            Escolha a opção desejada: ");
+        scanf("%d", &opcao);
+        getchar();
+        switch (opcao)
+        {
+        case 1:
+            cadastrar_morador();
+            break; /*Termina o bloco case. Isso impede que os outros casos sejam executados depois de executar este.*/
+        case 2:
+            pesquisar_morador();
+            break;
+        case 3:
+            atualizar_morador();
+            break;
+        case 4:
+            excluir_morador();
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
+            printf("Opção inválida! Tente novamente.\n");
+            menu_moradores();
+            break;
+        }
+        printf("///                                                                         ///\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    } while (opcao != 0);
 }
 
 void cadastrar_morador()
