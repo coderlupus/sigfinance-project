@@ -306,9 +306,7 @@ void pesquisar_despesa()
     getchar();  // Aguarda o usuário pressionar Enter
 }
 
-
-
-void atualizar_despesa(){
+void atualizar_despesa() {
     char id[5];
     char descricao[200];
     char valor[10];
@@ -320,6 +318,13 @@ void atualizar_despesa(){
     printf("/// Informe o id da despesa:                                                ///\n");
     fgets(id, sizeof(id), stdin);
     getchar();  // Aguarda o usuário pressionar Enter
+    printf("/// Informe a descrição da despesa:                                        ///\n");
+    fgets(descricao, sizeof(descricao), stdin);
+    printf("/// Informe o valor da despesa:                                            ///\n");
+    fgets(valor, sizeof(valor), stdin);
+    printf("/// Informe a data da despesa (DD/MM/AAAA):                               ///\n");
+    fgets(data, sizeof(data), stdin);
+    //  adicionar o código para atualizar a despesa com os dados recebidos.
 }
 
 void excluir_despesa()
