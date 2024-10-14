@@ -138,6 +138,7 @@ void menu_moradores(){
         default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
             printf("Opção inválida! Tente novamente.\n");
             menu_moradores();
+            break;
         }
         printf("///                                                                         ///\n");
         printf("///////////////////////////////////////////////////////////////////////////////\n");
