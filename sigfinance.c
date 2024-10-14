@@ -135,9 +135,8 @@ void menu_moradores(){
         case 0:
             tela_principal();
             break;
-        default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
-            printf("Opção inválida! Tente novamente.\n");
-            menu_moradores();
+        case 0:
+            return;  // Sai do loop e volta ao menu anterior sem fechar o programa
             break;
         }
         printf("///                                                                         ///\n");
