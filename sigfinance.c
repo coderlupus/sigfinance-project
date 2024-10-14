@@ -1,4 +1,4 @@
-/*BIBLIOTECAS/LIBRARIES:*/
+/*BIBLIOTECAS:*/
 #include <stdio.h>
 #include <stdlib.h>
 
