@@ -145,8 +145,7 @@ void menu_moradores(){
     } while (opcao != 0);
 }
 
-void cadastrar_morador()
-{
+void cadastrar_morador() {
     char nome[50];
     char idade[5];
     char email[50];
@@ -158,7 +157,7 @@ void cadastrar_morador()
     printf("///                                                                         ///\n");
     printf("/// Informe os dados do morador:                                            ///\n");
     printf("///            Nome: ");
-    fgets(nome, sizeof(nome), stdin); /* Lê uma linha do stdin, incluindo espaços */
+    fgets(nome, sizeof(nome), stdin);
     printf("///            Idade: ");
     fgets(idade, sizeof(idade), stdin);
     printf("///            E-mail: ");
@@ -176,7 +175,10 @@ void cadastrar_morador()
     printf("///            Tel: %s", tel);
     printf("///            CPF: %s", cpf);
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();  // Aguarda o usuário pressionar ENTER antes de voltar ao menu
 }
+
 
 void pesquisar_morador()
 {
