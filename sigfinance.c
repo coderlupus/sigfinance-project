@@ -437,42 +437,44 @@ void excluir_tarefa()
 }
 
 void menu_relatorios(void){
-    system("clear||cls");
-    int opcao;
-    printf("\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = = = = = Menu Relatórios = = = = = = = = =          ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            1. Relatórios de moradores                                   ///\n");
-    printf("///            2. Relatórios de despesas                                    ///\n");
-    printf("///            3. Relatórios de tarefas                                     ///\n");
-    printf("///            0. Retornar ao menu principal                                ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");
-    scanf("%d", &opcao);
-    getchar();
-    switch (opcao)
-    {
-    case 1:
-        relatorios_morador();
-        break;
-    case 2:
-        relatorios_despesa();
-        break;
-    case 3:
-        relatorios_tarefa();
-        break;
-    case 0:
-        tela_principal();
-        break;
-    default:
-        printf("Opção inválida! Tente novamente.\n");
-        menu_relatorios();
-        break;
-    }
-    printf("///                                                                         ///\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+     int opcao;
+     do{
+        system("clear||cls");
+        printf("\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("///            = = = = = = = = = Menu Relatórios = = = = = = = = =          ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            1. Relatórios de moradores                                   ///\n");
+        printf("///            2. Relatórios de despesas                                    ///\n");
+        printf("///            3. Relatórios de tarefas                                     ///\n");
+        printf("///            0. Retornar ao menu principal                                ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            Escolha a opção desejada: ");
+        scanf("%d", &opcao);
+        getchar();
+        switch (opcao)
+        {
+        case 1:
+            relatorios_morador();
+            break;
+        case 2:
+            relatorios_despesa();
+            break;
+        case 3:
+            relatorios_tarefa();
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default:
+            printf("Opção inválida! Tente novamente.\n");
+            menu_relatorios();
+            break;
+        }
+        printf("///                                                                         ///\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    } while (opcao != 0);
 }
 
 void relatorios_morador(void)
