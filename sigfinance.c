@@ -138,7 +138,6 @@ void menu_moradores(){
         default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
             printf("Opção inválida! Tente novamente.\n");
             menu_moradores();
-            break;
         }
         printf("///                                                                         ///\n");
         printf("///////////////////////////////////////////////////////////////////////////////\n");
@@ -181,16 +180,19 @@ void cadastrar_morador() {
 }
 
 
-void pesquisar_morador()
-{
+void pesquisar_morador() {
     char cpf[13];
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Pesquisar Morador = = = = = = = = = = = = =        ///\n");
-    printf("/// Informe o CPF do morador:                                               ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador para pesquisa: ");
     fgets(cpf, sizeof(cpf), stdin);
-    printf("/// CPF informado: %s\n", cpf);
+    // Código para pesquisar o morador
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();  // Pausa antes de voltar ao menu
 }
+
 
 void atualizar_morador()
 {
