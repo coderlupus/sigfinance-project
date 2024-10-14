@@ -194,27 +194,33 @@ void pesquisar_morador() {
 }
 
 
-void atualizar_morador()
-{
+void atualizar_morador() {
     char cpf[13];
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Atualizar Morador = = = = = = = = = = = = =        ///\n");
-    printf("/// Informe o CPF do morador para atualizar:                                ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador que deseja atualizar: ");
     fgets(cpf, sizeof(cpf), stdin);
-    printf("/// CPF informado: %s\n", cpf); // Implementar a atualização dos dados
+    // Código para atualizar o morador
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();  // Pausa antes de voltar ao menu
 }
 
-void excluir_morador()
-{
+
+void excluir_morador() {
     char cpf[13];
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Excluir Morador = = = = = = = = = = = = =          ///\n");
-    printf("/// Informe o CPF do morador para exclusão:                                 ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o CPF do morador que deseja excluir: ");
     fgets(cpf, sizeof(cpf), stdin);
-    printf("/// CPF informado: %s\n", cpf); // Implementar a exclusão
+    // Código para excluir o morador
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();  // Pausa antes de voltar ao menu
 }
+
 
 void menu_despesas(void)
 {
@@ -262,6 +268,7 @@ void cadastrar_despesa()
     char descricao[200];
     char valor[10];
     char data[12];
+    char id[5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Nova Despesa = = = = = = = = = = = = =   ///\n");
@@ -273,13 +280,17 @@ void cadastrar_despesa()
     fgets(valor, sizeof(valor), stdin);
     printf("///            Data (dd/mm/aaaa): ");
     fgets(data, sizeof(data), stdin);
+    printf("///            id: ");
+    fgets(id, sizeof(id), stdin);
 
     printf("///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            Despesa cadastrada com sucesso!                              ///\n");
     printf("///            Descrição: %s", descricao);
     printf("///            Valor: %s", valor);
     printf("///            Data: %s", data);
+    printf("///            Data: %s", id);
     printf("///////////////////////////////////////////////////////////////////////////////\n");
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void pesquisar_despesa()
@@ -291,30 +302,35 @@ void pesquisar_despesa()
     printf("///                                                                         ///\n");
     printf("/// Informe o id da despesa:                                                ///\n");
     fgets(id, sizeof(id), stdin);
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
-void atualizar_despesa()
-{
+
+
+void atualizar_despesa(){
     char id[5];
     char descricao[200];
     char valor[10];
     char data[12];
+
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Atualizar Despesa      = = = = = = = = = = = = = = ///\n");
     printf("///                                                                         ///\n");
     printf("/// Informe o id da despesa:                                                ///\n");
     fgets(id, sizeof(id), stdin);
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void excluir_despesa()
 {
     char id[5];
+    
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Excluir Despesa        = = = = = = = = = = = = = = ///\n");
     printf("///                                                                         ///\n");
     printf("/// Informe o id da despesa:                                                ///\n");
     fgets(id, sizeof(id), stdin);
-    /* add funcao de excluir apos salvamento de arquivos*/
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void menu_tarefas()
@@ -362,63 +378,60 @@ void cadastrar_tarefa()
 {
     char descricao[100];
     char prazo[20];
-    char id [5];
+    char id[5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
     printf("///            = = = = = Cadastrar Tarefa = = = = = = = = = = = = = = = =    ///\n");
     printf("///                                                                         ///\n");
-    printf("/// ID da tarefa::                                                    ///\n");
+    printf("/// ID da tarefa:                                                           ///\n");
     fgets(id, sizeof(id), stdin);
     printf("/// Descrição da tarefa:                                                    ///\n");
     fgets(descricao, sizeof(descricao), stdin);
     printf("/// Prazo da tarefa (dd/mm/aaaa):                                           ///\n");
     fgets(prazo, sizeof(prazo), stdin);
-    /* adicionar função de cadastro após salvamento de arquivos */
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void pesquisar_tarefa()
 {
-    char descricao[100];
-    char id [5];
+    char id[5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Pesquisar Tarefa = = = = = = = = = = = = = = = =     ///\n");
-    printf("///                                                                           ///\n");
-    printf("/// Informe o ID da tarefa:                                                   ///\n");
+    printf("///            = = = = = Pesquisar Tarefa = = = = = = = = = = = = = = = =    ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o ID da tarefa:                                                 ///\n");
     fgets(id, sizeof(id), stdin);
-    /* adicionar função de pesquisa após resgate de arquivos */
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void atualizar_tarefa()
 {
-    char descricao[100];
+    char id[5];
     char nova_descricao[100];
     char novo_prazo[20];
-    char id [5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Atualizar Tarefa = = = = = = = = = = = = = = = =     ///\n");
-    printf("///                                                                           ///\n");
-    printf("/// Informe o ID da tarefa que deseja atualizar:                              ///\n");
+    printf("///            = = = = = Atualizar Tarefa = = = = = = = = = = = = = = = =    ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o ID da tarefa que deseja atualizar:                            ///\n");
     fgets(id, sizeof(id), stdin);
-    printf("/// Nova descrição:                                                           ///\n");
+    printf("/// Nova descrição:                                                         ///\n");
     fgets(nova_descricao, sizeof(nova_descricao), stdin);
-    printf("/// Novo prazo (dd/mm/aaaa):                                                  ///\n");
+    printf("/// Novo prazo (dd/mm/aaaa):                                                ///\n");
     fgets(novo_prazo, sizeof(novo_prazo), stdin);
-    /* adicionar função de atualização após troca de dados */
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void excluir_tarefa()
 {
-    char descricao[100];
-    char id [5];
+    char id[5];
 
     printf("\n///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = Excluir Tarefa = = = = = = = = = = = = = = = =       ///\n");
-    printf("///                                                                           ///\n");
-    printf("/// Informe o ID da tarefa que deseja excluir:                                ///\n");
+    printf("///            = = = = = Excluir Tarefa = = = = = = = = = = = = = = = =      ///\n");
+    printf("///                                                                         ///\n");
+    printf("/// Informe o ID da tarefa que deseja excluir:                              ///\n");
     fgets(id, sizeof(id), stdin);
-    /* adicionar exclusão após salvamento de arquivos */
+    getchar();  // Aguarda o usuário pressionar Enter
 }
 
 void menu_relatorios(void){
