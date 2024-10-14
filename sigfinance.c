@@ -145,7 +145,7 @@ void menu_moradores(){
     } while (opcao != 0);
 }
 
-void cadastrar_morador() {
+void cadastrar_morador(){
     char nome[50];
     char idade[5];
     char email[50];
@@ -222,45 +222,46 @@ void excluir_morador() {
 }
 
 
-void menu_despesas(void)
-{
-    system("clear||cls");
+void menu_despesas(void){
     int opcao;
-    printf("\n");
-    printf("///////////////////////////////////////////////////////////////////////////////\n");
-    printf("///            = = = = = = = = = Menu Despesas = = = = = = = = =            ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            1. Cadastrar uma despesa                                     ///\n");
-    printf("///            2. Pesquisar as despesas                                     ///\n");
-    printf("///            3. Atualizar despesas                                        ///\n");
-    printf("///            4. Excluir uma despesa                                       ///\n");
-    printf("///            0. Voltar ao menu anterior                                   ///\n");
-    printf("///                                                                         ///\n");
-    printf("///            Escolha a opção desejada: ");
-    scanf("%d", &opcao);
-    getchar();
-    switch (opcao)
-    {
-    case 1:
-        cadastrar_despesa();
-        break;
-    case 2:
-        pesquisar_despesa();
-        break;
-    case 3:
-        atualizar_despesa();
-        break;
-    case 4:
-        excluir_despesa();
-        break;
-    case 0:
-        tela_principal();
-        break;
-    default:
-        printf("Opção inválida! Tente novamente.\n");
-        menu_despesas();
-        break;
-    }
+    do{
+        system("clear||cls");
+        printf("\n");
+        printf("///////////////////////////////////////////////////////////////////////////////\n");
+        printf("///            = = = = = = = = = Menu Despesas = = = = = = = = =            ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            1. Cadastrar uma despesa                                     ///\n");
+        printf("///            2. Pesquisar as despesas                                     ///\n");
+        printf("///            3. Atualizar despesas                                        ///\n");
+        printf("///            4. Excluir uma despesa                                       ///\n");
+        printf("///            0. Voltar ao menu anterior                                   ///\n");
+        printf("///                                                                         ///\n");
+        printf("///            Escolha a opção desejada: ");
+        scanf("%d", &opcao);
+        getchar();
+        switch (opcao)
+        {
+        case 1:
+            cadastrar_despesa();
+            break;
+        case 2:
+            pesquisar_despesa();
+            break;
+        case 3:
+            atualizar_despesa();
+            break;
+        case 4:
+            excluir_despesa();
+            break;
+        case 0:
+            tela_principal();
+            break;
+        default:
+            printf("Opção inválida! Tente novamente.\n");
+            menu_despesas();
+            break;
+        }
+    } while (opcao != 0);
 }
 
 void cadastrar_despesa()
