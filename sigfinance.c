@@ -78,13 +78,13 @@ void tela_principal(void){
             printf("Saindo do sistema...\n");
             break;
         default:
-            printf("Opção inválida! Tente novamente.\n");
+            printf("\t\t\t>Opção inválida! Tente novamente.\n");
+            printf("///                                                                         ///\n");
+            printf("///////////////////////////////////////////////////////////////////////////////\n");
+            printf("\n");
+            printf("\t\t\t>Tecle <ENTER> para continuar...\n");
+            getchar();
         }
-        printf("///                                                                         ///\n");
-        printf("///////////////////////////////////////////////////////////////////////////////\n");
-        printf("\n");
-        printf("\t\t\t>Tecle <ENTER> para continuar...\n");
-        getchar();
     } while (opcao != 0);
 }
 
@@ -120,11 +120,13 @@ void menu_despesas(void){
             excluir_despesa();
             break;
         case 0:
-            tela_principal();
+        
             break;
         default:
-            printf("Opção inválida! Tente novamente.\n");
-            menu_despesas();
+            printf("\t\t\t>Opção inválida! Tente novamente.\n");
+            printf("///                                                                         ///\n");
+            printf("///////////////////////////////////////////////////////////////////////////////\n");
+            printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
             break;
         }
     } while (opcao != 0);
@@ -236,12 +238,15 @@ void menu_tarefas(){
         case 4:
             excluir_tarefa();
             break;
-        case 0:
-            tela_principal();
+         case 0:
+        
             break;
         default:
             printf("Opção inválida! Tente novamente.\n");
-            menu_tarefas();
+            printf("\t\t\t>Opção inválida! Tente novamente.\n");
+            printf("///                                                                         ///\n");
+            printf("///////////////////////////////////////////////////////////////////////////////\n");
+            printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
             break;
         }
     } while (opcao != 0);
@@ -335,16 +340,16 @@ void menu_relatorios(void){
             relatorios_tarefa();
             break;
         case 0:
-            tela_principal();
+        
             break;
         default:
-            printf("Opção inválida! Tente novamente.\n");
-            menu_relatorios();
+            printf("\t\t\t>Opção inválida! Tente novamente.\n");
+            printf("///                                                                         ///\n");
+            printf("///////////////////////////////////////////////////////////////////////////////\n");
+            printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
             break;
         }
-        printf("///                                                                         ///\n");
-        printf("///////////////////////////////////////////////////////////////////////////////\n");
-        printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+        
     } while (opcao != 0);
 }
 
@@ -386,7 +391,7 @@ void menu_informacoes(void)
     printf("///a fácil administração das responsabilidades de cada morador da república.///\n");
     printf("///                  - - - Equipe de desenvolvimento - - -                  ///\n");
     printf("///   - - - Tomé Galileu Oliveira Arcanjo e Nathan Lopes Rodrigues - - -    ///\n");
-    printf("///                  - - -         Instagram       - - -                    ///\n");
+    printf("///                  - - -         Instagram      - - -                     ///\n");
     printf("///   - - - @Tome.arcanjo              e          @nlpsr_          - - -    ///\n");
     printf("///                  - - -           Github       - - -                     ///\n");
     printf("///   - - - @tome-arcanjo              e          @coderlupus      - - -    ///\n");
@@ -397,5 +402,5 @@ void menu_informacoes(void)
 
     printf("\n\t\t\t>>> Tecle <ENTER> para voltar ao menu principal...\n");
     getchar();        // Espera o usuário apertar "Enter"
-    tela_principal(); // Volta ao menu principal
+    // tela_principal(); // Volta ao menu principal
 }
