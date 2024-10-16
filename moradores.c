@@ -41,16 +41,16 @@ void menu_moradores(void){
         case 4:
             excluir_morador();
             break;
-        // case 0:
-        //     tela_principal();
-        //     break;
+        case 0:
+        
+            break;
         default: // Se nenhum dos valores anteriores (1, 2, 3, 4 ou 0) for selecionado, este bloco é executado.
-            printf("Opção inválida! Tente novamente.\n");
-            menu_moradores();
+            printf("\t\t\t>Opção inválida! Tente novamente.\n");
+            printf("///                                                                         ///\n");
+            printf("///////////////////////////////////////////////////////////////////////////////\n");
+            printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+            getchar();
         }
-        printf("///                                                                         ///\n");
-        printf("///////////////////////////////////////////////////////////////////////////////\n");
-        printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     } while (opcao != 0);
 }
 
