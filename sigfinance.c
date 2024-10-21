@@ -7,14 +7,8 @@
 /*ASSINATURA DAS FUNÇÕES/FUNCTION'S SIGNATURE*/
 void tela_principal(void); /* void: Significa que a função não retorna nenhum valor e (void): Indica que a função não recebe nenhum parâmetro.*/
 
-void menu_tarefas(void);
 void menu_relatorios(void);
 void menu_informacoes(void);
-
-void cadastrar_tarefa(void);
-void pesquisar_tarefa(void);
-void atualizar_tarefa(void);
-void excluir_tarefa(void);
 
 void relatorios_morador(void);
 void relatorios_despesa(void);
