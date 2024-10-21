@@ -4,16 +4,12 @@
 #include "moradores.h"
 #include "despesas.h"
 #include "tarefas.h"
+#include "relatorios.h"
 
 /*ASSINATURA DAS FUNÇÕES/FUNCTION'S SIGNATURE*/
 void tela_principal(void); /* void: Significa que a função não retorna nenhum valor e (void): Indica que a função não recebe nenhum parâmetro.*/
 
-void menu_relatorios(void);
 void menu_informacoes(void);
-
-void relatorios_morador(void);
-void relatorios_despesa(void);
-void relatorios_tarefa(void);
 
 /*FUNÇÃO MAIN/MAIN FUNCTION:*/
 int main(void)
