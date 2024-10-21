@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "moradores.h"
 #include "despesas.h"
+#include "tarefas.h"
 
 /*ASSINATURA DAS FUNÇÕES/FUNCTION'S SIGNATURE*/
 void tela_principal(void); /* void: Significa que a função não retorna nenhum valor e (void): Indica que a função não recebe nenhum parâmetro.*/
